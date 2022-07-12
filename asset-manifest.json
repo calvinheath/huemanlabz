@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/huemanz/static/css/main.a042f905.chunk.css",
+    "main.js": "/huemanz/static/js/main.e049363d.chunk.js",
+    "main.js.map": "/huemanz/static/js/main.e049363d.chunk.js.map",
+    "runtime-main.js": "/huemanz/static/js/runtime-main.e02e24fd.js",
+    "runtime-main.js.map": "/huemanz/static/js/runtime-main.e02e24fd.js.map",
+    "static/js/2.2d1b9229.chunk.js": "/huemanz/static/js/2.2d1b9229.chunk.js",
+    "static/js/2.2d1b9229.chunk.js.map": "/huemanz/static/js/2.2d1b9229.chunk.js.map",
+    "static/js/3.60d02d6d.chunk.js": "/huemanz/static/js/3.60d02d6d.chunk.js",
+    "static/js/3.60d02d6d.chunk.js.map": "/huemanz/static/js/3.60d02d6d.chunk.js.map",
+    "index.html": "/huemanz/index.html",
+    "static/css/main.a042f905.chunk.css.map": "/huemanz/static/css/main.a042f905.chunk.css.map",
+    "static/js/2.2d1b9229.chunk.js.LICENSE.txt": "/huemanz/static/js/2.2d1b9229.chunk.js.LICENSE.txt",
+    "static/media/reset.css": "/huemanz/static/media/font.617a0a92.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e02e24fd.js",
+    "static/js/2.2d1b9229.chunk.js",
+    "static/css/main.a042f905.chunk.css",
+    "static/js/main.e049363d.chunk.js"
+  ]
+}

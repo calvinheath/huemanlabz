@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Slackey&display=swap");
+
+body
+{
+font-family: 'Slackey'!important; 
+font-smooth: always;
+outline: none !important;
+border: none !important;
+}
+:root {
+  --primary: #16162b;
+  --primary-text: #ffffff;
+  --secondary: #ff1dec;
+  --secondary-text: #ffffff;
+  --accent: #16162b;
+  --accent-text: #ffffff;
+}
+.LandingImg
+{
+  background-image: url("./images/bg.png") !important;
+  outline: none !important;
+border: none !important;
+}
+.Home
+{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden !important;
+  position: relative;
+  outline: none !important;
+border: none !important;
+background: var(--primary)
+}
+.Thumby
+{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute !important;
+  width: 100vw !important;
+  outline: none !important;
+  border: none !important;
+  z-index: 0 !important;
+}
+.Header
+{
+  display: flex !important;
+  width: 100%;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0;
+  justify-content: space-between !important;
+  padding: 32px !important;
+  align-items: top !important;
+}
+button
+{
+  border: none !important;
+  outline: none !important;
+}
+ul
+{
+  display: flex !important;
+  flex-direction: column !important;
+  font-size: 1rem !important;
+  color: #fff;
+  text-align: right;
+  padding-top: none;
+}
+li a
+{
+  margin-left: 150px;
+  z-index: 1;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.Logo, .ImgButton
+{
+  width: 200px;
+}
+.Footer
+{
+  display: flex !important;
+  width: 100%;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0;
+  justify-content: space-between !important;
+  padding: 32px !important;
+  place-items: center;
+}
+.Icon
+{
+  height: 32px;
+  width: auto;
+  margin-right: 20px;
+}
+a .ImgButton
+{
+  user-select: none;
+  cursor: not-allowed;
+}

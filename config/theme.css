@@ -7,6 +7,8 @@ font-smooth: always;
 outline: none !important;
 border: none !important;
 transition: all 0.25s ease-in-out;
+smoothing: subpixel-antialiased !important;
+scrollbar-width: none;
 }
 :root {
   --primary: #16162b;
@@ -33,8 +35,8 @@ border: none !important;
   overflow: hidden !important;
   position: relative;
   outline: none !important;
-border: none !important;
-background: var(--primary)
+  border: none !important;
+  background: var(--primary)
 }
 .Thumby
 {
@@ -42,7 +44,8 @@ background: var(--primary)
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute !important;
-  width: 100vw !important;
+  width: 90vw !important;
+  padding: 20px 0px;
   outline: none !important;
   border: none !important;
   z-index: 0 !important;
@@ -76,11 +79,13 @@ ul
 }
 li a
 {
-  margin-left: 150px;
+  margin-left: 20px;
   z-index: 1;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+  height: 100px;
 }
 .Logo, .ImgButton
 {
@@ -118,9 +123,18 @@ a .ImgButton
 .disabled:hover
 {
   filter: opacity(0.5) !important;
+  filter: drop-shadow(0px 0px 0px #00000000);
   transform: scale(0.9) !important;
   font-size: 0.9em;
   font-size-adjust: 1em;
+}
+li a:hover
+{
+  filter: drop-shadow(0px 0px 2px #fff ) !important;
+  transform: scale(0.9) !important;
+  font-size: 0.9em;
+  font-size-adjust: 1em;
+  cursor: pointer;
 }
 .Icon
 {
@@ -130,4 +144,171 @@ a .ImgButton
 .Icon:hover
 {
   transform: scale(0.8) !important;
+}
+a
+{
+  filter: drop-shadow(-2px -1px 0px var(--primary)) !important;
+}
+.Team
+{
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden !important;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--primary);
+  overflow-y: scroll;
+  padding: 15vh 5vw 4vh 5vw;
+}
+.row
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.team-container
+{
+  width: fit-content;
+  padding: 10px;
+  border: 3px solid #ffffff50;
+  color :#fff;
+  place-items: center;
+  display: grid;
+  border-radius: 32px;
+  
+}
+.team-img
+{
+  width: 400px;
+  margin: 20px 20px 24px 20px;
+  border-radius: 16px;
+}
+.team-info h1
+{
+  display: block;
+  padding-bottom: 16px;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+.team-info h2
+{
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.team-info
+{
+  width: 440px;
+  text-align: left !important;
+  padding: 0px 20px 20px 20px;
+}
+.team-info p
+{
+  height: 150px;
+  letter-spacing: 1.2px;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 100;
+}
+.Info
+{
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden !important;
+  position: relative;
+  margin: 0 auto;
+  background: var(--primary);
+  overflow-y: scroll;
+  padding: 15vh 5vw 4vh 5vw;
+}
+.Info::-webkit-scrollbar {
+  display: none;
+}
+.Team::-webkit-scrollbar {
+  display: none;
+}
+.info-container
+{
+  width: 50vw;
+  margin: 0 auto;
+}
+.info-container h1
+{
+  color: #fff;
+  font-size: 5vw;
+  line-height: 6vw;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.header-img 
+{
+  width: 100%;
+  margin: 0 auto !important;
+  place-self: center;
+  border-radius: 24px;
+}
+.info-p
+{
+  letter-spacing: 1.2px;
+  font-size: 3vw;
+  line-height: 3.6vw;
+  font-weight: 100;
+  color: #ffffffbd;
+}
+.py-2
+{
+  margin-bottom: 60px !important;
+}
+.emoji
+{
+  color: #fff;
+}
+@media only screen and (max-width: 1200px) {
+  .row
+  {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-gap: 20px;
+    padding: 0px 20px;
+  }
+  .team-img
+{
+  width: 260px;
+  margin: 10px 10px 14px 10px;
+  border-radius: 16px;
+}
+.team-info
+{
+  width: 300px;
+  text-align: left !important;
+  padding: 0px 20px 20px 20px;
+}
+.team-info p
+{
+  height: 260px;
+  font-size: 1rem;
+}
+.team-info h2
+{
+  font-size: 1.2rem;
+}
+.team-info h1
+{
+  font-size: 2rem;
+}
+}
+@media only screen and (max-width: 1600px) {
+  .row
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
